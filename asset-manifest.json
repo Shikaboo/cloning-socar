@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cloning-socar/static/css/main.048629aa.css",
+    "main.js": "/cloning-socar/static/js/main.cd547661.js",
+    "static/js/453.8c81e01f.chunk.js": "/cloning-socar/static/js/453.8c81e01f.chunk.js",
+    "index.html": "/cloning-socar/index.html",
+    "main.048629aa.css.map": "/cloning-socar/static/css/main.048629aa.css.map",
+    "main.cd547661.js.map": "/cloning-socar/static/js/main.cd547661.js.map",
+    "453.8c81e01f.chunk.js.map": "/cloning-socar/static/js/453.8c81e01f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.048629aa.css",
+    "static/js/main.cd547661.js"
+  ]
+}
