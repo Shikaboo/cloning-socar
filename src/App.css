@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "AvenirLTPro-Heavy", "sdg-m", sans-serif;
+  letter-spacing: -0.015em;
+  color: #374553; 
+  font-size: 13px;
+  padding: 0; margin: 0;
+}
+
+a, li, ul{
+  list-style: none;
+  text-decoration: none;
+}
+
+.w100{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+body{
+  width: 100%;
+  position: relative;
+  letter-spacing: -0.015em;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  overflow: auto;
+  font-size: 13pt;
+  color: #374553;
+  word-break: keep-all;
+  font-family: "AvenirLTPro-Heavy", "sdg-m", sans-serif;
+  line-height: 1;
+}
+
+/* header */
+
+.body_inner{
+  min-height: calc(100vh - 290px);
+}
+
+#blue{
+  position: absolute;
+  width: 100%;
+  left: 70%;
+  bottom: -1px;
+  height: 100%;
+  background: rgba(0, 184, 255, 1);
+  transform: skewX(-30deg) translate3d(30%, 0, 0);
+  transform-origin: bottom left;
+}
+
+header{
+  height: 100vh;
+  position: relative;
+}
+
+.head_inner{
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+  top: 0; 
+  transition: all 0.2s;
+}
+
+.head_inner>div{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+}
+
+.logo{
+  display: block;
+  width: 112px;
+  position: absolute;
+  top: 50%;
+  z-index: 90;
+  left: 40px;
+}
+
+.hamBtn{
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  width: 36px;
+  height: 14px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.hamBtn>span{
+  width: 26px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  margin: 4px 0;
+}
+
+.main_txt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.main_txt>p{
+  text-align: center;
+  color: #fff;
+  font-size: 48pt;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.main_visual{
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: auto;
+  min-width: 100%; min-height: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* main */
+
+main.w100{
+  padding: 0 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+/* sec */
+
+main>.sec{
+  margin: 0 auto 100px;
+  max-width: 800px;
+}
+
+main>.sec>article{
+  overflow: hidden;
+  width: 100%;
+}
+
+main>.sec>article>h2{
+  font-size: 30pt;
+  letter-spacing: -0.025em;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  display: inline-block;
+  position: relative;
+}
+
+main>.sec>article>h2::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: -16px;
+  bottom: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0bb8ff;
+}
+
+main>.sec>article>p{
+  font-size: 14pt;
+  color: #aaa;
+  letter-spacing: -0.025em;
+  line-height: 1.5;
+}
+
+main>.sec>div>img{
+  width: 100%; height: auto;
+  float: left;
+  margin: 50px 0;
+}
+
+/* sec2 */
+
+.sec2{
+  padding: 64px 0;
+  margin-top: 0;
+  padding-bottom: 80px;
+  height: 300px;
+  min-height: 0;
+  background-color: #f7f8f9;
+  position: relative;
+  overflow: hidden;
+}
+
+.sec2>article{
+  height: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.sec2>article>div{
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  font-size: 28pt;
+  font-weight: 550;
+  text-align: center;
+  line-height: 1.4;
+  color: #aaa;
+}
+
+.sec2>article>div>span{
+  font-size: 29pt;
+  font-weight: 600;
+  color: #0bb8ff; 
+}
+
+#blue{
+  position: absolute;
+  width: 100%;
+  left: 70%;
+  bottom: -1px;
+  height: 100%;
+  background: rgba(0, 184, 255, 1);
+  transform: skewX(-30deg) translate3d(0, 0, 0);
+  /* transform: skewX(-30deg) translate3d(30%, 0, 0); 기존은 이거, 스크롤링 하면 위  */
+  transform-origin: bottom left;
+}
+
+/* footer */
+
+footer{
+  overflow: auto;
+  padding: 40px 18px 100px;
+  position: relative;
+  background-color: #28323c;
+  box-sizing: border-box;
+}
+
+footer>section{
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+#iconList,
+#infoList{
+  display: flex;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+#iconList{
+  gap: 10px;
+}
+
+#infoList{
+  position: static;
+  width: 100%;
+  float: left;
+  gap: 24px;
+}
+
+#infoList>li{
+  font-size: 15pt;
+  color: #646f7c;
+  margin-bottom: 8px;
+}
+
+#infoList>li>a{
+  font-size: 12pt;
+  color: #c5c8ce;
+}
+
+#infoList2{
+  position: static;
+  width: 50%;
+  float: left;
+}
+
+#infoList2>li>a{
+  font-size: 10pt;
+  line-height: 1.7;
+  color: #646f7c;
+}
+
+.botInfo{
+  float: left;
+  width: 50%;
+}
+
+.botInfo>p{
+  font-size: 10pt;
+  color: #646f7c;
+  line-height: 1.7;
+}
+
+.botInfo>p>a{
+  text-decoration: underline;
+  color: #c5c8ce;
+}
+
+address{
+  width: 50%;
+  float: left;
+  letter-spacing: 0.025em;
+  line-height: 1.7;
+  font-size: 10pt;
+  color: #646f7c;
+  font-style: normal;
+}
